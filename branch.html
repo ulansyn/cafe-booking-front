@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Филиал</title>
+    <style>
+        /* Общие стили из третьего примера */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #f5ebe0;
+            color: #432818;
+        }
+
+        .navbar {
+            background: #6f1d1b;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #ffe6a7;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: #ffe6a7;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: opacity 0.3s;
+        }
+
+        .btn {
+            background: #6f1d1b;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #5a1614;
+        }
+
+        /* Стили для страницы филиала */
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .branch-details {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .branch-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .branch-info {
+            padding: 2rem;
+        }
+
+        .branch-info h2 {
+            color: #6f1d1b;
+            margin-bottom: 1rem;
+        }
+
+        .schedule, .menu {
+            background: #fff5e6;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        li {
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <a href="#" class="logo">CafeBooking</a>
+    <div class="nav-links">
+        <a href="index.html">Назад к поиску</a>
+        <a href="#login">Вход</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="branch-details">
+        <div class="branch-image">
+            <img src="placeholder.jpg" alt="Фото филиала">
+        </div>
+        <div class="branch-info">
+            <h2>Название Филиала</h2>
+            <p>Описание филиала. Здесь подробная информация о филиале, его преимуществах и услугах.</p>
+
+            <div class="contact-info">
+                <p><strong>📞 Контакты:</strong> +7 (123) 456-78-90</p>
+                <p><strong>📍 Адрес:</strong> ул. Примерная, 1</p>
+            </div>
+
+            <div class="schedule">
+                <h3>🕒 Расписание работы</h3>
+                <p>Пн-Пт: 9:00 - 20:00</p>
+                <p>Сб-Вс: 10:00 - 18:00</p>
+            </div>
+
+            <div class="menu">
+                <h3>🍽 Меню</h3>
+                <ul>
+                    <li>Блюдо 1 - 500₽</li>
+                    <li>Блюдо 2 - 700₽</li>
+                    <li>Блюдо 3 - 300₽</li>
+                </ul>
+            </div>
+
+            <button class="btn">Забронировать столик</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

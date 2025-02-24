@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный Кабинет Сотрудника</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Личный Кабинет Сотрудника</h1>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="barcode_scan.html">Сканировать штрих-код</a>
+    </nav>
+</header>
+<main>
+    <section class="employee-dashboard">
+        <div class="calendar-integration">
+            <h2>Расписание (Google Calendar)</h2>
+            <div class="calendar-placeholder">
+                <p>Интегрированное расписание</p>
+            </div>
+        </div>
+        <div class="current-bookings">
+            <h2>Текущие бронирования</h2>
+            <ul>
+                <li>
+                    <p>Бронь №12345 от 15.02.2025</p>
+                    <button class="btn">Подтвердить</button>
+                    <button class="btn cancel-btn">Отменить</button>
+                </li>
+                <li>
+                    <p>Бронь №67890 от 16.02.2025</p>
+                    <button class="btn">Подтвердить</button>
+                    <button class="btn cancel-btn">Отменить</button>
+                </li>
+                <!-- Добавьте бронирования -->
+            </ul>
+        </div>
+        <div class="add-product">
+            <button class="btn barcode-add-btn">Добавить товар через штрих-код</button>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 My App</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

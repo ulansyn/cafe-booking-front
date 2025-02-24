@@ -1,0 +1,45 @@
+        <!DOCTYPE html>
+        <html lang="ru">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Бронирование Столика</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+        <header>
+            <h1>Бронирование Столика</h1>
+            <nav>
+                <a href="branch.html">Назад к филиалу</a>
+            </nav>
+        </header>
+        <main>
+            <section class="booking-section">
+                <div class="calendar">
+                    <h2>Выберите дату и время</h2>
+                    <!-- Простая форма выбора даты и времени -->
+                    <input type="date" id="booking-date">
+                    <input type="time" id="booking-time">
+                </div>
+                <div class="hall-layout">
+                    <h2>Схема зала</h2>
+                    <!-- Схема зала -->
+                    <div class="tables">
+                        <div class="table" data-table="1">Столик 1</div>
+                        <div class="table" data-table="2">Столик 2</div>
+                        <div class="table" data-table="3">Столик 3</div>
+                        <!-- Добавьте больше столиков -->
+                    </div>
+                </div>
+                <div class="booking-actions">
+                    <button class="btn">Подтвердить бронь</button>
+                    <button class="btn stripe-btn">Оплатить через Stripe</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 My App</p>
+        </footer>
+        <script src="script.js"></script>
+        </body>
+        </html>
